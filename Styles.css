@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "League Spartan", sans-serif;
+}
+
+body{
+    background-color:  hsl(300, 24%, 96%);
+    background: url(images/bg-pattern-top-mobile.svg) left top, 
+    url(images/bg-pattern-bottom-mobile.svg) right 100%;
+    background-repeat:  no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    width: 85%;
+    margin: 5em auto;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .header h1 {
+    color:hsl(333, 80%, 67%);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 0.8em;
+    text-shadow: 0px 0px 1px;
+  }
+  
+  .header p {
+    color:  hsl(303, 10%, 53%);
+    line-height: 1.3rem;
+    font-weight: 500;
+    padding-top: 1.5em;
+    text-shadow: 0px 0px 1px;
+  }
+
+  .ratings {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+  }
+
+  .rating-box {
+    border: 2px solid hsl(300, 24%, 96%);
+    background-color:hsl(300, 24%, 96%);
+    width: 21em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  
+  .star {
+    text-align: center;
+  }
+  
+  .rating-box p {
+    color:hsl(300, 43%, 22%) ;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-cards {
+    margin-top: 3.5em;
+    gap: 1.8em;
+  }
+  
+  .card{
+    margin-top: 1.2em;
+    width: 21.5em;
+    padding-block: 2.5em;
+    padding-inline: 2em;
+    background-color:hsl(300, 43%, 22%) ;
+    border-radius: 10px;
+  }
+
+  .card img {
+    border-radius: 50%;
+    width: 36px;
+  }
+
+  .card .profile {
+    display: flex;
+  }
+ 
+  .card .name {
+    padding-inline: 1em;
+    line-height: 1.2em;
+    color: hsl(300, 24%, 96%);
+    opacity: 0.9;
+  }
+
+  .name .coloured {
+    color: hsl(333, 80%, 67%);
+    opacity: 0.6;
+  }
+
+  .card .quote {
+    padding-top: 1.5em;
+    line-height: 1.3em;
+    color: hsl(300, 24%, 96%);
+    font-weight: 500;
+  }
+
+  @media (min-width: 1000px) {
+    body {
+      background: url(bg-pattern-top-desktop.svg) -7% top,
+        url(bg-pattern-bottom-desktop.svg) right -100%;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+  
+    main {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .header {
+      text-align: left;
+      grid-column: span 2;
+      width: 350px;
+    }
+  
+    .ratings {
+      margin: 0;
+      grid-column: span 2;
+      align-items: flex-start;
+      gap: 1em;
+    }
+  
+    .rating-box {
+      width: 27em;
+      flex-direction: row;
+    }
+  
+    .star {
+      padding-left: 0.5em;
+      text-align: center;
+    }
+  
+    .rating-box p {
+      padding-inline: 1em;
+      text-align: center;
+      font-weight: 700;
+    }
+  
+    .down1 {
+      transform: translateX(10%);
+    }
+  
+    .down2 {
+      transform: translateX(20%);
+    }
+  
+    .wrap {
+      display: grid;
+      grid-column: span 4;
+    }
+  
+    .review-cards {
+      display: flex;
+    }
+  
+    .card {
+      width: 22em;
+    }
+    .one {
+        transform: translateY(7%);
+      }
+    
+      .two {
+        transform: translateY(14%);
+      }
+  
+  }
+
