@@ -17,7 +17,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL:https://github.com/nwakego98/social-proof-section.git
-- Live Site URL:
+- Live Site URL:https://shiny-cupcake-7f7d39.netlify.app
 
 ## My process
 
