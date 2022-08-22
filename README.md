@@ -16,7 +16,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL:
+- Solution URL:https://github.com/nwakego98/social-proof-section.git
 - Live Site URL:
 
 ## My process
